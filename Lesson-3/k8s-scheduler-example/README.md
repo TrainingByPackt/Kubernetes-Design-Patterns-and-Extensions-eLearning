@@ -8,9 +8,7 @@ $ make docker-build
 $ make docker-push
 ```
 
-
 ### Example usage
-
 
 #### Create a pod with custom scheduler:
 ```

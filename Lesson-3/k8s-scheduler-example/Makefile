@@ -42,19 +42,19 @@ all:
 	@echo $(OSFLAG) - $(GOOS) - $(GOARCH)
 
 build: clean
-	docker run -v ${PWD}:/go/src/github.com/onuryilmaz/k8s-scheduler-example -w /go/src/github.com/onuryilmaz/k8s-scheduler-example -e GOOS=$(GOOS) -e GOARCH=$(GOARCH) golang:1.9.5 go build -v -o scheduler
+	docker run -v ${PWD}:/go/src/github.com/trainingbypackt/k8s-scheduler-example -w /go/src/github.com/trainingbypackt/k8s-scheduler-example -e GOOS=$(GOOS) -e GOARCH=$(GOARCH) golang:1.9.5 go build -v -o scheduler
 
 clean:
 	rm -rf scheduler
 
 docker-build:
-	docker build -t onuryilmaz/k8s-scheduler-example .
+	docker build -t trainingbypackt/k8s-scheduler-example .
 
 docker-push:
-	docker push onuryilmaz/k8s-scheduler-example
+	docker push trainingbypackt/k8s-scheduler-example
 
 k8s-run:
-	kubectl run scheduler --image=onuryilmaz/k8s-scheduler-example
+	kubectl run scheduler --image=trainingbypackt/k8s-scheduler-example
 
 k8s-logs:
 	kubectl logs $(shell kubectl get pods --selector=run=scheduler -o jsonpath="{.items[0].metadata.name}")

@@ -1,7 +1,7 @@
 package stub
 
 import (
-	apiv1 "github.com/onuryilmaz/k8s-operator-example/pkg/apis/k8s/v1"
+	apiv1 "github.com/trainingbypackt/k8s-operator-example/pkg/apis/k8s/v1"
 
 	"github.com/operator-framework/operator-sdk/pkg/sdk/action"
 	"github.com/operator-framework/operator-sdk/pkg/sdk/handler"

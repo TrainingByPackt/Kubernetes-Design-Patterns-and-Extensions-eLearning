@@ -4,14 +4,14 @@ This repository contains the Kubernetes operator code for example custom resourc
 
 ### Initialize operator code from scratch
 ```
-$ cd $GOPATH/src/github.com/onuryilmaz/
+$ cd $GOPATH/src/github.com/trainingbypackt/
 $operator-sdk new k8s-operator-example --api-version=k8s.packt.com/v1 --kind=WeatherReport
 ```
 
 ### Build and push
 ```
-$ operator-sdk build onuryilmaz/k8s-operator-example
-$ docker push onuryilmaz/k8s-operator-example
+$ operator-sdk build trainingbypackt/k8s-operator-example
+$ docker push trainingbypackt/k8s-operator-example
 ```
 
 ### Deploy operator
