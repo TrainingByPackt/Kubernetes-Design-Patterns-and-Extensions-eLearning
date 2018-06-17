@@ -10,7 +10,7 @@ spec:
       args:
       - while true; do
           echo -en '\n';
-          echo My pod name is $MY_NODE_NAME and living in namespace $MY_POD_NAMESPACE;
+          echo My node name is $MY_NODE_NAME and living in namespace $MY_POD_NAMESPACE;
           echo Pod IP is $MY_POD_IP and my service account is $MY_POD_SERVICE_ACCOUNT;
           echo Running with the memory limit of $MY_MEM_LIMIT and request of $MY_MEM_REQUEST;
           echo Running with the CPU limit of $MY_CPU_LIMIT and request of $MY_CPU_REQUEST;
