@@ -63,5 +63,5 @@ $ kubectl logs $(kubectl get weatherreport amsterdam-daily -o jsonpath={.status.
 ```
 $ kubectl delete -f deploy/cr.yaml
 $ kubectl delete -f deploy/operator.yaml
-$ kubectl delete -f deploy/rbac.yaml
+$ kubectl delete -f deploy/crd.yaml
 ```
