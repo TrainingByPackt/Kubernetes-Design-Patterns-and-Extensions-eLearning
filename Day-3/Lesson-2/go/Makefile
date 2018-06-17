@@ -42,19 +42,19 @@ all:
 	@echo $(OSFLAG) - $(GOOS) - $(GOARCH)
 
 build: clean
-	docker run -v ${PWD}:/go/src/github.com/onuryilmaz/k8s-client-example/go -w /go/src/github.com/onuryilmaz/k8s-client-example/go -e GOOS=$(GOOS) -e GOARCH=$(GOARCH) golang:1.9.5 go build -v -o client
+	docker run -v ${PWD}:/go/src/github.com/trainingbypackt/k8s-client-example/go -w /go/src/github.com/trainingbypackt/k8s-client-example/go -e GOOS=$(GOOS) -e GOARCH=$(GOARCH) golang:1.9.5 go build -v -o client
 
 clean:
 	rm -rf client
 
 docker-build:
-	docker build -t onuryilmaz/k8s-client-example:go .
+	docker build -t trainingbypackt/k8s-client-example:go .
 
 docker-push:
-	docker push onuryilmaz/k8s-client-example:go
+	docker push trainingbypackt/k8s-client-example:go
 
 k8s-run:
-	kubectl run go-client --image=onuryilmaz/k8s-client-example:go
+	kubectl run go-client --image=trainingbypackt/k8s-client-example:go
 
 k8s-logs:
 	kubectl logs $(shell kubectl get pods --selector=run=go-client -o jsonpath="{.items[0].metadata.name}")

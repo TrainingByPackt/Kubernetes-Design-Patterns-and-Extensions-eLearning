@@ -16,7 +16,3 @@ make docker-build
 ```
 make k8s-run
 ```
-
-### Dependency Management
-* [glide](https://github.com/Masterminds/glide) is used for vendoring and dependency management.
-* If you need to change client library version, update `glide.yaml` file and run `glide up`. 
