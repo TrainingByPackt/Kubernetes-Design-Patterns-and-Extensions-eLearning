@@ -32,11 +32,10 @@ For an optimal student experience, we recommend the following hardware configura
 ### Software requirements
 You’ll also need the following software installed in advance:
 * Access to a Kubernetes cluster with a version equal to or higher than 1.10
-* Local Kubernetes solutions such as minikube or clusters living in cloud providers: https://github.com/kubernetes/minikube
-* The Kubernetes command-line tool kubectl is required for accessing Kubernetes from the Terminal:https://kubernetes.io/docs/tasks/tools/install-kubectl/
-* The Docker client and server with a minimum version of 18.03 are required for building and testing the client libraries:https://www.docker.com/get-started
-* Python and Go installation is not required but is recommended for playing around with the client libraries locally: https://www.python.org/downloads/
-* [GoLang](https://golang.org/)
+* Local Kubernetes solutions such as [minikube](https://github.com/kubernetes/minikube) or clusters living in cloud providers: 
+* The Kubernetes command-line tool kubectl is required for accessing Kubernetes from the [Terminal](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+* The [Docker client](https://www.docker.com/get-started) and server with a minimum version of 18.03 are required for building and testing the client libraries
+* [Python](https://www.python.org/downloads/) and [Go](https://golang.org/) installation is not required but is recommended for playing around with the client libraries locally
 
 
 
