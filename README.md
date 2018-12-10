@@ -5,7 +5,7 @@
 
 
 
-# Kubernetes Design Patterns and Extensions
+# Kubernetes Design Patterns and Extensions eLearning
 This course shows how  to exploit the real world with complex raw data using TensorFlow 1.x. Throughout the book, you’ll learn how to implement deep learning algorithms for machine learning systems and integrate them into your product offerings, including search, image recognition, and language processing. Additionally, you’ll learn how to analyze and improve the performance of deep learning models. This can be done by comparing algorithms against benchmarks, along with machine intelligence, to learn from the information and determine ideal behaviors within a specific context.After finishing the book, you will be familiar with machine learning techniques, in particular the use of TensorFlow for deep learning, and will be ready to apply your knowledge to research or commercial projects.
 
 
